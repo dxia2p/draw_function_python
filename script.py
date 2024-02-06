@@ -36,10 +36,9 @@ while gameRunning:
             gameRunning = False
 
     # fill the window with a color to wipe away anything from last frame
-    window.fill("purple")
+    window.fill("white")
 
     # RENDER HERE
-    pygame.draw.circle(window, "blue", pygame.Vector2(0, 0), 50)
     DrawRobot(pygame.Vector2(100, 200), "red", "blue", 100, 100, 60) # using the function to draw robots
     DrawRobot(pygame.Vector2(400, 300), "gray", "green", 150, 50, 30)
     DrawRobot(pygame.Vector2(700, 600), "yellow", "orange", 40, 65, 50)
